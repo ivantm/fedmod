@@ -1,5 +1,5 @@
 {
-  "name": "nav",
+  "name": "footer",
   "version": "1.0.0",
   "scripts": {
     "build": "npm run build:mf && npm run build:npm",
@@ -28,7 +28,7 @@
     "webpack-dev-server": "3.11.0"
   },
   "dependencies": {
-    "react": "15.6.0",
-    "react-dom": "15.6.0"
+    "react": "16.8.0",
+    "react-dom": "16.8.0"
   }
 }

@@ -2,7 +2,7 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
 
 module.exports = {
   output: {
-    publicPath: "http://localhost:8081/",
+    publicPath: "http://localhost:8082/",
   },
 
   resolve: {
@@ -10,7 +10,7 @@ module.exports = {
   },
 
   devServer: {
-    port: 8081,
+    port: 8082,
   },
 
   module: {
@@ -27,12 +27,12 @@ module.exports = {
 
   plugins: [
     new ModuleFederationPlugin({
-      name: "nav",
-      library: { type: "var", name: "nav" },
-      filename: "nav.js",
+      name: "footer",
+      library: { type: "var", name: "footer" },
+      filename: "footer.js",
       remotes: {},
       exposes: {
-        "./Header": "./src/Header",
+        "./Footer": "./src/Footer",
       },
       shared: require("./package.json").dependencies,
     }),

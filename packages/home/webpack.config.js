@@ -37,6 +37,7 @@ module.exports = {
       filename: "remoteEntry.js",
       remotes: {
         "mf-nav": "nav",
+        "mf-footer": "footer",
       },
       exposes: {},
       shared: require("./package.json").dependencies,
